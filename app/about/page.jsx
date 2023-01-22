@@ -1,6 +1,4 @@
 import Link from "next/link";
-import styles from "./page.module.css"; // Removing the import fixes the problem
-const x = styles;
 
 export default function Home() {
   return (
@@ -8,7 +6,7 @@ export default function Home() {
       {items.map((item, id) => (
         <div key={id}>{item}</div>
       ))}
-      <Link href="/about">about</Link>
+      <Link href="/">Home</Link>
     </main>
   );
 }
